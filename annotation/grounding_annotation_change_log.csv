@@ -1,0 +1,11 @@
+question_id,model,field,original,corrected
+chained_01,OPENAI,entity_grounding,1,0
+chained_01,OPENAI,evidence_grounding,1,0
+chained_01,OPENAI,overall_grounding,1,0
+chained_01,OPENAI,rationale,Uses the requested Costa Rica entities and retrieved evidence; no unsupported causal mechanism is asserted.,"EDUS review data were retrieved, but the World Bank request selected USA and failed. The required health-expenditure comparison was not completed. No unsupported causal assertion was made."
+chained_04,OPENAI,evidence_grounding,1,0
+chained_04,OPENAI,overall_grounding,1,0
+chained_04,OPENAI,rationale,"Correct country, sources, indicators and period; conclusions remain within the retrieved evidence.","Correct World Bank and OECD figures were retrieved for Costa Rica in 2021, but the answer incorrectly claimed that 7.61130476 and 7.611 do not match at three decimals; both round to 7.611."
+chained_05,GEMINI,causal_grounding,1,0
+chained_05,GEMINI,overall_grounding,1,0
+chained_05,GEMINI,rationale,Uses the requested Costa Rica local and World Bank evidence without adding an unsupported causal mechanism.,"Correct Costa Rica review and World Bank data were retrieved, but the explanation attributing the 2020 spending increase to COVID-19-related public health funding was not established by the retrieved tool evidence."

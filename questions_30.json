@@ -1,0 +1,555 @@
+[
+  {
+    "id": "wb_01",
+    "category": "worldbank",
+    "question_en": "According to World Bank data, what was Costa Rica's current health expenditure as a percentage of GDP in the most recent available year?",
+    "expected_tool": "get_worldbank_indicator",
+    "ground_truth": {
+      "note": "Verified against the World Bank source for indicator SH.XPD.CHEX.GD.ZS.",
+      "value": 6.8663702,
+      "year": 2023,
+      "verified_on": "2026-09-05",
+      "verified_against_url": "https://api.worldbank.org/v2/country/CRI/indicator/SH.XPD.CHEX.GD.ZS?format=json&per_page=1000&mrnev=1"
+    }
+  },
+  {
+    "id": "wb_02",
+    "category": "worldbank",
+    "question_en": "According to World Bank data, what was Costa Rica's current health expenditure per capita, in US dollars, in 2020?",
+    "expected_tool": "get_worldbank_indicator",
+    "ground_truth": {
+      "indicator": "current_health_expenditure_per_capita_usd",
+      "year": 2020,
+      "value": 969.89099121
+    }
+  },
+  {
+    "id": "wb_03",
+    "category": "worldbank",
+    "question_en": "According to World Bank data, did Costa Rica's domestic general government health expenditure, as a percentage of GDP, increase or decrease between 2015 and 2022?",
+    "expected_tool": "get_worldbank_indicator",
+    "ground_truth": {
+      "indicator": "domestic_govt_health_expenditure_pct_gdp",
+      "start_year": 2015,
+      "end_year": 2022,
+      "start_value": 5.51982594,
+      "end_value": 4.95363188,
+      "delta_percentage_points": -0.56619406,
+      "direction": "decrease"
+    }
+  },
+  {
+    "id": "wb_04",
+    "category": "worldbank",
+    "question_en": "According to World Bank data, in 2021, was Costa Rica's out-of-pocket health expenditure, as a share of current health expenditure, higher or lower than its domestic general government health expenditure, as a share of general government expenditure?",
+    "expected_tool": "get_worldbank_indicator",
+    "ground_truth": {
+      "year": 2021,
+      "out_of_pocket_pct_che": 20.51704597,
+      "domestic_govt_health_pct_govt_expenditure": 25.77289963,
+      "relationship": "lower"
+    }
+  },
+  {
+    "id": "wb_05",
+    "category": "worldbank",
+    "question_en": "According to World Bank data, by how many percentage points did Costa Rica's external health expenditure, as a share of current health expenditure, change between 2010 and 2020?",
+    "expected_tool": "get_worldbank_indicator",
+    "ground_truth": {
+      "indicator": "external_health_expenditure_pct_che",
+      "start_year": 2010,
+      "end_year": 2020,
+      "start_value": 0.21066861,
+      "end_value": 0.13579112,
+      "delta_percentage_points": -0.07487749,
+      "direction": "decrease"
+    }
+  },
+  {
+    "id": "oecd_01",
+    "category": "oecd",
+    "question_en": "According to OECD data, what was Costa Rica's health expenditure as a percentage of GDP in the most recent available year?",
+    "expected_tool": "get_oecd_indicator",
+    "ground_truth": {
+      "note": "Verified against OECD Health Expenditure and Financing data for Costa Rica.",
+      "value": 6.776,
+      "year": 2025,
+      "verified_on": "2026-09-05",
+      "verified_against_url": "https://sdmx.oecd.org/public/rest/data/OECD.ELS.HD,DSD_SHA@DF_SHA,/CRI.A.EXP_HEALTH.PT_B1GQ._T._Z._T._T._T._Z._Z._Z?startPeriod=2023"
+    }
+  },
+  {
+    "id": "oecd_02",
+    "category": "oecd",
+    "question_en": "According to OECD data, what was Costa Rica's health expenditure as a percentage of GDP in 2019?",
+    "expected_tool": "get_oecd_indicator",
+    "ground_truth": {
+      "year": 2019,
+      "value": 7.221
+    }
+  },
+  {
+    "id": "oecd_03",
+    "category": "oecd",
+    "question_en": "According to OECD data, did Costa Rica's health expenditure as a percentage of GDP increase or decrease between 2019 and 2023?",
+    "expected_tool": "get_oecd_indicator",
+    "ground_truth": {
+      "start_year": 2019,
+      "end_year": 2023,
+      "start_value": 7.221,
+      "end_value": 6.866,
+      "delta_percentage_points": -0.355,
+      "direction": "decrease"
+    }
+  },
+  {
+    "id": "oecd_04",
+    "category": "oecd",
+    "question_en": "According to OECD data, in which year between 2015 and 2023 was Costa Rica's health expenditure as a percentage of GDP highest?",
+    "expected_tool": "get_oecd_indicator",
+    "ground_truth": {
+      "period": [
+        2015,
+        2023
+      ],
+      "highest_years": [
+        2020
+      ],
+      "highest_value": 7.825,
+      "tie": false
+    }
+  },
+  {
+    "id": "oecd_05",
+    "category": "oecd",
+    "question_en": "According to OECD data, by how many percentage points did Costa Rica's health expenditure as a percentage of GDP change between 2004 and 2025?",
+    "expected_tool": "get_oecd_indicator",
+    "ground_truth": {
+      "start_year": 2004,
+      "end_year": 2025,
+      "start_value": 6.63,
+      "end_value": 6.776,
+      "delta_percentage_points": 0.146,
+      "direction": "increase"
+    }
+  },
+  {
+    "id": "local_01",
+    "category": "local",
+    "question_en": "How many reviews of the application were classified as negative during 2022?",
+    "expected_tool": "query_local_reviews",
+    "ground_truth": {
+      "year": 2022,
+      "negative_review_count": 1261
+    }
+  },
+  {
+    "id": "local_02",
+    "category": "local",
+    "question_en": "What was the main problem reported by users of the application during 2021?",
+    "expected_tool": "query_local_reviews",
+    "ground_truth": {
+      "year": 2021,
+      "main_problem": {
+        "category": "ACCESO_CITAS",
+        "count": 550,
+        "pct_of_substantive_problems": 62.8571,
+        "pct_of_negative_reviews": 36.9624
+      }
+    }
+  },
+  {
+    "id": "local_03",
+    "category": "local",
+    "question_en": "Among reviews of the application during 2023 that mention the word \"citas\" (appointments), what percentage of those with a valid rating were classified as negative?",
+    "expected_tool": "query_local_reviews",
+    "ground_truth": {
+      "year": 2023,
+      "query": "citas",
+      "negative_review_count": 1253,
+      "valid_reviews_for_analysis": 2355,
+      "proportion_negative": 0.5320594479830149,
+      "percentage_negative": 53.20594479830149,
+      "denominator_rule": "negative_reviews / valid_reviews_for_analysis after query='citas'"
+    }
+  },
+  {
+    "id": "local_04",
+    "category": "local",
+    "question_en": "Comparing the proportion of negative reviews (among reviews with a valid rating) of the application in the first half of 2022 (January 1–June 30) versus the second half of 2022 (July 1–December 31), did that proportion increase or decrease?",
+    "expected_tool": "query_local_reviews",
+    "ground_truth": {
+      "first_half_2022": {
+        "negative_review_count": 679,
+        "valid_reviews_for_analysis": 4423,
+        "proportion_negative": 0.15351571331675334,
+        "percentage_negative": 15.351571331675334
+      },
+      "second_half_2022": {
+        "negative_review_count": 582,
+        "valid_reviews_for_analysis": 2814,
+        "proportion_negative": 0.2068230277185501,
+        "percentage_negative": 20.68230277185501
+      },
+      "delta_proportion": 0.05330731440179676,
+      "delta_percentage_points": 5.330731440179676,
+      "direction": "increase"
+    }
+  },
+  {
+    "id": "local_05",
+    "category": "local",
+    "question_en": "What was the most frequent word (or words, if there is a tie) among negative reviews of the application during 2023, along with its frequency count, and what was the main substantive problem category identified for that same period, along with its count?",
+    "expected_tool": "query_local_reviews",
+    "ground_truth": {
+      "top_negative_keywords": [
+        {
+          "word": "citas",
+          "count": 1411
+        }
+      ],
+      "tie": false,
+      "negative_review_count": 3177,
+      "main_problem": {
+        "category": "ACCESO_CITAS",
+        "count": 1248
+      }
+    }
+  },
+  {
+    "id": "wb_vs_oecd_neutral_01",
+    "category": "wb_vs_oecd_C",
+    "question_en": "What is Costa Rica's health expenditure as a percentage of GDP?",
+    "expected_tool": null,
+    "ground_truth": {
+      "note": "Condición C (neutral, sin nombrar fuente) — mide 'source preference under ambiguity', una métrica SEPARADA de tool-selection accuracy (que solo aplica a condiciones A/B con herramienta única esperada). El ground truth debe registrar AMBOS valores (WB y OCDE), si coinciden o difieren, y evaluar si el modelo reconoce la ambigüedad (ej. consulta ambas fuentes, o menciona la posible discrepancia) en vez de asumir silenciosamente una sola.",
+      "worldbank_value": 6.8663702,
+      "oecd_value": 6.866,
+      "values_match": true,
+      "comparison_year": 2023,
+      "matching_rule": "Values are considered matching at OECD's published precision (3 decimals)."
+    }
+  },
+  {
+    "id": "wb_oecd_02",
+    "category": "wb_vs_oecd_A",
+    "question_en": "According to World Bank data specifically, what was Costa Rica's health expenditure as a percentage of GDP in 2018?",
+    "expected_tool": "get_worldbank_indicator",
+    "ground_truth": {
+      "year": 2018,
+      "value": 7.28587723
+    }
+  },
+  {
+    "id": "wb_oecd_03",
+    "category": "wb_vs_oecd_B",
+    "question_en": "According to OECD data specifically, what was Costa Rica's health expenditure as a percentage of GDP in 2021?",
+    "expected_tool": "get_oecd_indicator",
+    "ground_truth": {
+      "year": 2021,
+      "value": 7.611
+    }
+  },
+  {
+    "id": "wb_oecd_04",
+    "category": "wb_vs_oecd_C",
+    "question_en": "What was Costa Rica's health expenditure as a percentage of GDP in 2021, according to official statistics?",
+    "expected_tool": null,
+    "ground_truth": {
+      "year": 2021,
+      "worldbank_value": 7.61130476,
+      "oecd_value": 7.611,
+      "values_match_at_3_decimals": true,
+      "matching_rule": "Compare values rounded to 3 decimals."
+    }
+  },
+  {
+    "id": "wb_oecd_05",
+    "category": "wb_vs_oecd_C",
+    "question_en": "For the year 2020, what is Costa Rica's health expenditure as a percentage of GDP according to the World Bank, what is it according to the OECD, and by how many percentage points do the two values differ?",
+    "expected_tool": null,
+    "ground_truth": {
+      "year": 2020,
+      "worldbank_value": 7.82545757,
+      "oecd_value": 7.825,
+      "worldbank_rounded_3": 7.825,
+      "oecd_rounded_3": 7.825,
+      "values_match_at_3_decimals": true,
+      "native_difference_percentage_points": 0.00045757
+    }
+  },
+  {
+    "id": "chained_01",
+    "category": "chained",
+    "question_en": "What was the main problem reported by users of the application during 2023, and how does it relate to the trend in health expenditure per capita for the same period?",
+    "expected_tool": null,
+    "ground_truth": {
+      "note": "Preguntas encadenadas: ground truth debe verificar (a), (b) y (c) por separado, ver Sección 4.1.1 del paper. CAUTELA DE CAUSALIDAD (agregado 18 ago, revisión externa): 'relate' NUNCA debe interpretarse como causalidad. Que el gasto en salud suba/baje mientras los usuarios reportan cierto problema no demuestra que uno explique el otro. El scoring debe premiar respuestas que integren ambas evidencias de forma defendible, pero PENALIZAR explícitamente cualquier inferencia causal no sustentada (ej. 'el problema ocurrió PORQUE bajó el gasto' sin evidencia que lo sostenga). Ver métrica secundaria 'evidence-grounded synthesis' en 4.3.",
+      "a_dominant_problem": "ACCESO_CITAS",
+      "b_indicator_trend": {
+        "direction": "increasing",
+        "indicator": "current_health_expenditure_per_capita_usd",
+        "indicator_code": "SH.XPD.CHEX.PC.CD",
+        "values": {
+          "2021": 977.14831543,
+          "2022": 978.84155273,
+          "2023": 1163.30224609
+        },
+        "pct_change_2022_2023": 18.844793
+      },
+      "c_defensible_relationship": "The increase in health expenditure per capita and the predominance of appointment-access problems coexist in 2023, but these data do not support a causal inference between the two."
+    }
+  },
+  {
+    "id": "chained_02",
+    "category": "chained",
+    "question_en": "What was the main problem reported by users of the application during 2020–2022, and how does it relate to the trend in Costa Rica's out-of-pocket health expenditure as a share of current health expenditure over the same period?",
+    "expected_tool": null,
+    "ground_truth": {
+      "main_problem": {
+        "category": "ACCESO_CITAS",
+        "count": 1507,
+        "pct_of_substantive_problems": 64.155,
+        "pct_of_negative_reviews": 38.3461
+      },
+      "worldbank": {
+        "indicator": "out_of_pocket_expenditure_pct_che",
+        "start_year": 2020,
+        "end_year": 2022,
+        "start_value": 20.28676224,
+        "end_value": 22.43504333,
+        "delta_percentage_points": 2.1482810899999976,
+        "direction": "increase"
+      },
+      "causality_rule": "Observed co-movement or divergence does not establish causation."
+    }
+  },
+  {
+    "id": "chained_03",
+    "category": "chained",
+    "question_en": "What was the main problem reported by users of the application during 2021–2023, and how does it relate to the OECD trend in Costa Rica's health expenditure as a percentage of GDP over the same period?",
+    "expected_tool": null,
+    "ground_truth": {
+      "main_problem": {
+        "category": "ACCESO_CITAS",
+        "count": 2275,
+        "pct_of_substantive_problems": 65.4676,
+        "pct_of_negative_reviews": 38.3901
+      },
+      "oecd": {
+        "start_year": 2021,
+        "end_year": 2023,
+        "start_value": 7.611,
+        "end_value": 6.866,
+        "delta_percentage_points": -0.7450000000000001,
+        "direction": "decrease"
+      },
+      "causality_rule": "Observed co-movement or divergence does not establish causation."
+    }
+  },
+  {
+    "id": "chained_04",
+    "category": "chained",
+    "question_en": "For 2021, compare Costa Rica's health expenditure as a percentage of GDP according to the World Bank and the OECD. Do the values match at three decimal places, and what is their native-precision difference in percentage points?",
+    "expected_tool": null,
+    "ground_truth": {
+      "year": 2021,
+      "worldbank_value": 7.61130476,
+      "oecd_value": 7.611,
+      "worldbank_rounded_3": 7.611,
+      "oecd_rounded_3": 7.611,
+      "values_match_at_3_decimals": true,
+      "native_difference_percentage_points": 0.00030476000000057013
+    }
+  },
+  {
+    "id": "chained_05",
+    "category": "chained",
+    "question_en": "What was the most frequent word (or words, if there is a tie) among negative application reviews during 2018–2020, how frequent was it relative to all negative reviews in that period, and what was the World Bank trend in Costa Rica's domestic general government health expenditure as a percentage of GDP over the same period?",
+    "expected_tool": null,
+    "ground_truth": {
+      "top_negative_keywords": [
+        {
+          "word": "nunca",
+          "count": 1363
+        }
+      ],
+      "tie": false,
+      "negative_review_count": 3113,
+      "top_keyword_share_of_negative_reviews": 0.43784131063283005,
+      "top_keyword_percentage_of_negative_reviews": 43.784131063283006,
+      "worldbank": {
+        "indicator": "domestic_govt_health_expenditure_pct_gdp",
+        "start_year": 2018,
+        "end_year": 2020,
+        "start_value": 5.27453423,
+        "end_value": 5.61917973,
+        "delta_percentage_points": 0.3446454999999995,
+        "direction": "increase"
+      },
+      "causality_rule": "Observed co-movement or divergence does not establish causation."
+    }
+  },
+  {
+    "id": "chained_06",
+    "category": "chained",
+    "question_en": "What was the main problem reported by users of the application during 2020–2022, and did the World Bank trend in health expenditure per capita and the OECD trend in health expenditure as a percentage of GDP move in the same or opposite directions over that period?",
+    "expected_tool": null,
+    "ground_truth": {
+      "main_problem": {
+        "category": "ACCESO_CITAS",
+        "count": 1507,
+        "pct_of_substantive_problems": 64.155,
+        "pct_of_negative_reviews": 38.3461
+      },
+      "worldbank_per_capita": {
+        "start_year": 2020,
+        "end_year": 2022,
+        "start_value": 969.89099121,
+        "end_value": 978.84155273,
+        "delta": 8.950561519999951,
+        "direction": "increase"
+      },
+      "oecd_pct_gdp": {
+        "start_year": 2020,
+        "end_year": 2022,
+        "start_value": 7.825,
+        "end_value": 7.184,
+        "delta_percentage_points": -0.641,
+        "direction": "decrease"
+      },
+      "relationship_of_directions": "opposite",
+      "causality_rule": "Observed co-movement or divergence does not establish causation."
+    }
+  },
+  {
+    "id": "chained_07",
+    "category": "chained",
+    "question_en": "What was the main problem reported by users of the application during 2017–2019, how prevalent was it among negative reviews, and how did the World Bank out-of-pocket expenditure share and OECD health expenditure as a percentage of GDP change over the same period?",
+    "expected_tool": null,
+    "ground_truth": {
+      "main_problem": {
+        "category": "ACCESO_CITAS",
+        "count": 867,
+        "pct_of_substantive_problems": 68.1068,
+        "pct_of_negative_reviews": 40.8769
+      },
+      "negative_review_count": 2121,
+      "worldbank_oop": {
+        "start_year": 2017,
+        "end_year": 2019,
+        "start_value": 21.25539017,
+        "end_value": 22.32456398,
+        "delta_percentage_points": 1.0691738100000023,
+        "direction": "increase"
+      },
+      "oecd_pct_gdp": {
+        "start_year": 2017,
+        "end_year": 2019,
+        "start_value": 7.045,
+        "end_value": 7.221,
+        "delta_percentage_points": 0.17600000000000016,
+        "direction": "increase"
+      },
+      "causality_rule": "Observed co-movement or divergence does not establish causation."
+    }
+  },
+  {
+    "id": "chained_08",
+    "category": "chained",
+    "question_en": "What was the main problem reported by users of the application during 2019–2021, and how did Costa Rica's World Bank domestic general government health expenditure as a share of general government expenditure and OECD health expenditure as a percentage of GDP change over the same period?",
+    "expected_tool": null,
+    "ground_truth": {
+      "main_problem": {
+        "category": "ACCESO_CITAS",
+        "count": 1812,
+        "pct_of_substantive_problems": 69.4519,
+        "pct_of_negative_reviews": 40.9214
+      },
+      "worldbank_govt_share": {
+        "start_year": 2019,
+        "end_year": 2021,
+        "start_value": 24.15332603,
+        "end_value": 25.77289963,
+        "delta_percentage_points": 1.6195736000000025,
+        "direction": "increase"
+      },
+      "oecd_pct_gdp": {
+        "start_year": 2019,
+        "end_year": 2021,
+        "start_value": 7.221,
+        "end_value": 7.611,
+        "delta_percentage_points": 0.3899999999999997,
+        "direction": "increase"
+      },
+      "causality_rule": "Observed co-movement or divergence does not establish causation."
+    }
+  },
+  {
+    "id": "chained_09",
+    "category": "chained",
+    "question_en": "What was the most frequent word (or words, if there is a tie) among negative application reviews during 2021–2023, how frequent was it relative to all negative reviews, and how did the World Bank domestic general government health expenditure as a percentage of GDP and OECD health expenditure as a percentage of GDP change over the same period?",
+    "expected_tool": null,
+    "ground_truth": {
+      "top_negative_keywords": [
+        {
+          "word": "citas",
+          "count": 2583
+        }
+      ],
+      "tie": false,
+      "negative_review_count": 5926,
+      "top_keyword_share_of_negative_reviews": 0.43587580155248057,
+      "top_keyword_percentage_of_negative_reviews": 43.58758015524806,
+      "worldbank_govt_pct_gdp": {
+        "start_year": 2021,
+        "end_year": 2023,
+        "start_value": 5.35382223,
+        "end_value": 4.61124086,
+        "delta_percentage_points": -0.7425813699999999,
+        "direction": "decrease"
+      },
+      "oecd_pct_gdp": {
+        "start_year": 2021,
+        "end_year": 2023,
+        "start_value": 7.611,
+        "end_value": 6.866,
+        "delta_percentage_points": -0.7450000000000001,
+        "direction": "decrease"
+      },
+      "causality_rule": "Observed co-movement or divergence does not establish causation."
+    }
+  },
+  {
+    "id": "chained_10",
+    "category": "chained",
+    "question_en": "What was the main problem reported by users of the application during 2018–2020, and did the World Bank external health expenditure share diverge from the OECD health expenditure as a percentage of GDP trend over the same period?",
+    "expected_tool": null,
+    "ground_truth": {
+      "main_problem": {
+        "category": "ACCESO_CITAS",
+        "count": 1303,
+        "pct_of_substantive_problems": 70.0538,
+        "pct_of_negative_reviews": 41.8567
+      },
+      "worldbank_external_health": {
+        "start_year": 2018,
+        "end_year": 2020,
+        "start_value": 0.0062117,
+        "end_value": 0.13579112,
+        "delta_percentage_points": 0.12957942,
+        "direction": "increase"
+      },
+      "oecd_pct_gdp": {
+        "start_year": 2018,
+        "end_year": 2020,
+        "start_value": 7.286,
+        "end_value": 7.825,
+        "delta_percentage_points": 0.5390000000000006,
+        "direction": "increase"
+      },
+      "diverged_in_direction": false,
+      "causality_rule": "Observed co-movement or divergence does not establish causation."
+    }
+  }
+]

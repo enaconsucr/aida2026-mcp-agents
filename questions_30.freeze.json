@@ -1,0 +1,8 @@
+{
+  "benchmark_file": "questions_30.json",
+  "sha256": "703c98abd774abdd919fe07929943c62f499ae9948e3aecc8143f35e0d59e5ff",
+  "questions": 30,
+  "status": "FROZEN",
+  "frozen_at_utc": "2026-09-06T23:47:58.603360+00:00",
+  "note": "Benchmark frozen after deterministic ground-truth construction and validation. Any modification to questions_30.json invalidates this hash."
+}

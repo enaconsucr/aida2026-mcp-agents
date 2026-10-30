@@ -1,0 +1,65 @@
+{
+  "trained_at_utc": "2026-09-03T05:30:15.487085+00:00",
+  "reviews_db_path": "data/resenas_edus_google_play.csv",
+  "corpus_sha256": "57ec46a018623aea852a941e8c4a3513a8aeaa5502927a19eea3b4504517338c",
+  "n_corpus_rows": 60278,
+  "sentiment_source": "derived_from_rating:calificacion",
+  "sentiment_rule_if_derived": "1-2=NEG;3=NEU;4-5=POS",
+  "negative_labels_used": [
+    "0",
+    "NEG",
+    "Negativo",
+    "negative"
+  ],
+  "n_negative_before_content_filter": 12758,
+  "n_empty_negative_reviews_excluded": 0,
+  "n_negative_reviews_total": 12758,
+  "invalid_rating_count": 0,
+  "invalid_rating_pct": 0.0,
+  "id_column_source": "review_id",
+  "content_column_source": "comentario",
+  "date_column_source": "fecha",
+  "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "embedding_model_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "embedding_model_revision_note": "Revisión exacta del snapshot Hugging Face utilizado durante el entrenamiento definitivo.",
+  "bertopic_language": "spanish",
+  "seed": 42,
+  "min_cluster_size": 55,
+  "hdbscan_params": {
+    "min_samples": null,
+    "metric": "euclidean",
+    "cluster_selection_method": "eom",
+    "prediction_data": true
+  },
+  "umap_params": {
+    "n_neighbors": 15,
+    "n_components": 5,
+    "min_dist": 0.0,
+    "metric": "cosine",
+    "random_state": 42
+  },
+  "vectorizer_ngram_range": [
+    1,
+    2
+  ],
+  "top_n_words": 10,
+  "calculate_probabilities": false,
+  "nr_topics": null,
+  "n_topics_found": 38,
+  "noise_count": 4196,
+  "noise_pct": 32.89,
+  "python_version": "3.13.15",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "package_versions": {
+    "bertopic": "0.17.4",
+    "sentence-transformers": "6.0.1",
+    "umap-learn": "0.5.12",
+    "hdbscan": "0.8.44",
+    "scikit-learn": "1.9.0",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "torch": "2.13.0"
+  },
+  "requirements_freeze_file": "requirements_topic_model.txt",
+  "artifact_policy": "Modelo entrenado offline una sola vez. No se reentrena ni ejecuta BERTopic dentro de la herramienta MCP."
+}

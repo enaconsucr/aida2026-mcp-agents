@@ -1,0 +1,20 @@
+{
+  "file": "grounding_annotations.json",
+  "status": "FROZEN",
+  "sha256": "f1a67c147158836e4059a42cd48d633dc967fff627543fa46b3a605c09a48965",
+  "annotation_version": "1.0",
+  "n_questions": 10,
+  "n_model_responses": 20,
+  "models": [
+    "gpt-4o-2024-08-06",
+    "gemini-3.5-flash"
+  ],
+  "dimensions": [
+    "entity_grounding",
+    "evidence_grounding",
+    "causal_grounding",
+    "overall_grounding"
+  ],
+  "frozen_at_utc": "2026-09-07T15:43:20.527963+00:00",
+  "note": "Manual grounding annotations frozen after response-level review and causal-language sensitivity audit. Changes require a new annotation version and SHA-256."
+}

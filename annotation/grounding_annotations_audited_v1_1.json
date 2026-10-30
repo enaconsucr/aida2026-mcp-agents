@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "version": "1.1-audited",
+    "scope": "Manual grounding annotation for chained benchmark questions",
+    "n_questions": 10,
+    "n_model_responses": 20,
+    "dimensions": {
+      "entity_grounding": "Correct country/entity, source, indicator, and requested period.",
+      "evidence_grounding": "Substantive factual or explanatory claims are supported by retrieved tool evidence.",
+      "causal_grounding": "Does not infer causation or an unsupported mechanism from observational co-movement or divergence.",
+      "overall_grounding": "1 only if entity_grounding, evidence_grounding, and causal_grounding are all 1."
+    },
+    "audit_status": "Closed after author approval, 2026-10-21",
+    "source_file": "grounding_annotations.json",
+    "change_scope": "Only chained_01 OPENAI, chained_04 OPENAI, and chained_05 GEMINI were modified; original file preserved."
+  },
+  "annotations": [
+    {
+      "question_id": "chained_01",
+      "model": "OPENAI",
+      "entity_grounding": 0,
+      "evidence_grounding": 0,
+      "causal_grounding": 1,
+      "overall_grounding": 0,
+      "rationale": "EDUS review data were retrieved, but the World Bank request selected USA and failed. The required health-expenditure comparison was not completed. No unsupported causal assertion was made."
+    },
+    {
+      "question_id": "chained_01",
+      "model": "GEMINI",
+      "entity_grounding": 1,
+      "evidence_grounding": 0,
+      "causal_grounding": 0,
+      "overall_grounding": 0,
+      "rationale": "Uses the correct Costa Rica evidence but adds an unsupported explanatory/causal interpretation of the observed trends."
+    },
+    {
+      "question_id": "chained_02",
+      "model": "OPENAI",
+      "entity_grounding": 1,
+      "evidence_grounding": 0,
+      "causal_grounding": 0,
+      "overall_grounding": 0,
+      "rationale": "Uses the requested entities but extends observational co-movement into an unsupported causal interpretation."
+    },
+    {
+      "question_id": "chained_02",
+      "model": "GEMINI",
+      "entity_grounding": 1,
+      "evidence_grounding": 0,
+      "causal_grounding": 0,
+      "overall_grounding": 0,
+      "rationale": "Uses the correct retrieved values but makes strong unsupported causal claims linking the observed indicators."
+    },
+    {
+      "question_id": "chained_03",
+      "model": "OPENAI",
+      "entity_grounding": 1,
+      "evidence_grounding": 0,
+      "causal_grounding": 0,
+      "overall_grounding": 0,
+      "rationale": "Uses the correct entities but interprets observational trends through an unsupported causal mechanism."
+    },
+    {
+      "question_id": "chained_03",
+      "model": "GEMINI",
+      "entity_grounding": 1,
+      "evidence_grounding": 0,
+      "causal_grounding": 0,
+      "overall_grounding": 0,
+      "rationale": "Correct retrieved evidence is followed by unsupported claims such as budget or operational mechanisms not established by the tools."
+    },
+    {
+      "question_id": "chained_04",
+      "model": "OPENAI",
+      "entity_grounding": 1,
+      "evidence_grounding": 0,
+      "causal_grounding": 1,
+      "overall_grounding": 0,
+      "rationale": "Correct World Bank and OECD figures were retrieved for Costa Rica in 2021, but the answer incorrectly claimed that 7.61130476 and 7.611 do not match at three decimals; both round to 7.611."
+    },
+    {
+      "question_id": "chained_04",
+      "model": "GEMINI",
+      "entity_grounding": 1,
+      "evidence_grounding": 1,
+      "causal_grounding": 1,
+      "overall_grounding": 1,
+      "rationale": "Correct country, sources, indicators and period; conclusions remain within the retrieved evidence."
+    },
+    {
+      "question_id": "chained_05",
+      "model": "OPENAI",
+      "entity_grounding": 1,
+      "evidence_grounding": 1,
+      "causal_grounding": 1,
+      "overall_grounding": 1,
+      "rationale": "Uses the requested Costa Rica local and World Bank evidence without adding an unsupported causal mechanism."
+    },
+    {
+      "question_id": "chained_05",
+      "model": "GEMINI",
+      "entity_grounding": 1,
+      "evidence_grounding": 1,
+      "causal_grounding": 0,
+      "overall_grounding": 0,
+      "rationale": "Correct Costa Rica review and World Bank data were retrieved, but the explanation attributing the 2020 spending increase to COVID-19-related public health funding was not established by the retrieved tool evidence."
+    },
+    {
+      "question_id": "chained_06",
+      "model": "OPENAI",
+      "entity_grounding": 0,
+      "evidence_grounding": 0,
+      "causal_grounding": 1,
+      "overall_grounding": 0,
+      "rationale": "Switches from Costa Rica to United States data, violating entity and evidence grounding; no separate unsupported causal mechanism is required for the causal criterion to fail."
+    },
+    {
+      "question_id": "chained_06",
+      "model": "GEMINI",
+      "entity_grounding": 1,
+      "evidence_grounding": 1,
+      "causal_grounding": 1,
+      "overall_grounding": 1,
+      "rationale": "Uses the correct Costa Rica entities and retrieved multi-source evidence and describes the directional relationship without unsupported causation."
+    },
+    {
+      "question_id": "chained_07",
+      "model": "OPENAI",
+      "entity_grounding": 0,
+      "evidence_grounding": 0,
+      "causal_grounding": 1,
+      "overall_grounding": 0,
+      "rationale": "Switches to United States macro indicators rather than the requested Costa Rica evidence."
+    },
+    {
+      "question_id": "chained_07",
+      "model": "GEMINI",
+      "entity_grounding": 1,
+      "evidence_grounding": 1,
+      "causal_grounding": 1,
+      "overall_grounding": 1,
+      "rationale": "Uses the correct Costa Rica evidence and limits the comparison to the retrieved trends."
+    },
+    {
+      "question_id": "chained_08",
+      "model": "OPENAI",
+      "entity_grounding": 1,
+      "evidence_grounding": 1,
+      "causal_grounding": 1,
+      "overall_grounding": 1,
+      "rationale": "Correct Costa Rica entities and retrieved evidence are used without unsupported causal attribution."
+    },
+    {
+      "question_id": "chained_08",
+      "model": "GEMINI",
+      "entity_grounding": 1,
+      "evidence_grounding": 1,
+      "causal_grounding": 1,
+      "overall_grounding": 1,
+      "rationale": "Correct Costa Rica entities and retrieved evidence are used without unsupported causal attribution."
+    },
+    {
+      "question_id": "chained_09",
+      "model": "OPENAI",
+      "entity_grounding": 0,
+      "evidence_grounding": 0,
+      "causal_grounding": 1,
+      "overall_grounding": 0,
+      "rationale": "Local evidence is from Costa Rica but the macroeconomic comparison switches to United States data."
+    },
+    {
+      "question_id": "chained_09",
+      "model": "GEMINI",
+      "entity_grounding": 1,
+      "evidence_grounding": 0,
+      "causal_grounding": 1,
+      "overall_grounding": 0,
+      "rationale": "Uses the correct Costa Rica values and directions but adds explanatory or methodological content not supported by the retrieved tool evidence."
+    },
+    {
+      "question_id": "chained_10",
+      "model": "OPENAI",
+      "entity_grounding": 0,
+      "evidence_grounding": 0,
+      "causal_grounding": 1,
+      "overall_grounding": 0,
+      "rationale": "Switches to United States data and consequently reaches a relationship conclusion not grounded in the requested Costa Rica evidence."
+    },
+    {
+      "question_id": "chained_10",
+      "model": "GEMINI",
+      "entity_grounding": 1,
+      "evidence_grounding": 1,
+      "causal_grounding": 1,
+      "overall_grounding": 1,
+      "rationale": "Uses the correct Costa Rica evidence and correctly characterizes the directional relationship without unsupported causal attribution."
+    }
+  ]
+}

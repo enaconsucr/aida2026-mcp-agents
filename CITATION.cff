@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this material, please cite the paper and this repository."
+title: "Beyond Factual Accuracy: Evaluating MCP-Based LLM Agents for Heterogeneous Public-Sector Data Analytics — code and data"
+authors:
+  - family-names: "Castellón-Rodríguez"
+    given-names: "Leonardo"
+  - family-names: "Palos-Sánchez"
+    given-names: "Pedro"
+version: "1.0.0"
+date-released: "2026-10-30"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Beyond Factual Accuracy: Evaluating MCP-Based LLM Agents for Heterogeneous Public-Sector Data Analytics"
+  authors:
+    - family-names: "Castellón-Rodríguez"
+      given-names: "Leonardo"
+    - family-names: "Palos-Sánchez"
+      given-names: "Pedro"
+  collection-title: "Procedia Computer Science (AIDA 2026)"
+  publisher:
+    name: "Elsevier"
+  year: 2026

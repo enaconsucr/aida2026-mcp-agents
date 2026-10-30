@@ -1,0 +1,1185 @@
+{
+  "summary": {
+    "total_questions_scored": 30,
+    "tool_selection_accuracy": 1.0,
+    "tool_selection_n": 17,
+    "avg_tool_execution_success_rate": 1.0,
+    "answer_accuracy_macro": 0.9266666666666666,
+    "answer_accuracy_n": 30,
+    "answer_accuracy_micro_components": 0.9193548387096774,
+    "answer_checks_correct_total": 57,
+    "answer_checks_total": 62,
+    "exact_answer_rate": 0.8666666666666667,
+    "exact_answers": 26,
+    "grounding_n": 10,
+    "entity_grounding": 0.6,
+    "evidence_grounding": 0.4,
+    "causal_grounding": 0.8,
+    "overall_grounding": 0.4,
+    "grounding_annotation_model": "OPENAI",
+    "run_provider": "openai",
+    "run_model": "gpt-4o-2024-08-06",
+    "latency_by_category_seconds": {
+      "worldbank": {
+        "mean": 7.062190033396473,
+        "n": 5
+      },
+      "oecd": {
+        "mean": 3.355665250204038,
+        "n": 5
+      },
+      "local": {
+        "mean": 2.74398160839919,
+        "n": 5
+      },
+      "wb_vs_oecd_C": {
+        "mean": 6.293102638660154,
+        "n": 3
+      },
+      "wb_vs_oecd_A": {
+        "mean": 3.5771471670013852,
+        "n": 1
+      },
+      "wb_vs_oecd_B": {
+        "mean": 3.2264104999776464,
+        "n": 1
+      },
+      "chained": {
+        "mean": 6.67594805409899,
+        "n": 10
+      }
+    },
+    "note": "La exactitud factual de las respuestas se calcula automáticamente mediante checks explícitos contra el ground_truth. La revisión manual El grounding se incorpora desde anotaciones manuales externas y congeladas, separadas de la exactitud factual automática. Aspectos cualitativos adicionales de la síntesis pueden requerir revisión manual."
+  },
+  "per_question": [
+    {
+      "question_id": "wb_01",
+      "category": "worldbank",
+      "status": "completed",
+      "tool_selection": {
+        "applicable": true,
+        "correct": true,
+        "expected": "get_worldbank_indicator",
+        "actual": "get_worldbank_indicator"
+      },
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 1,
+        "successful_calls": 1,
+        "success_rate": 1.0
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 2,
+      "answer_checks_total": 2,
+      "answer_checks": [
+        {
+          "name": "value",
+          "expected": 6.8663702,
+          "correct": true
+        },
+        {
+          "name": "year",
+          "expected": 2023,
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true
+    },
+    {
+      "question_id": "wb_02",
+      "category": "worldbank",
+      "status": "completed",
+      "tool_selection": {
+        "applicable": true,
+        "correct": true,
+        "expected": "get_worldbank_indicator",
+        "actual": "get_worldbank_indicator"
+      },
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 1,
+        "successful_calls": 1,
+        "success_rate": 1.0
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 1,
+      "answer_checks_total": 1,
+      "answer_checks": [
+        {
+          "name": "value",
+          "expected": 969.89099121,
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true
+    },
+    {
+      "question_id": "wb_03",
+      "category": "worldbank",
+      "status": "completed",
+      "tool_selection": {
+        "applicable": true,
+        "correct": true,
+        "expected": "get_worldbank_indicator",
+        "actual": "get_worldbank_indicator"
+      },
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 1,
+        "successful_calls": 1,
+        "success_rate": 1.0
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 1,
+      "answer_checks_total": 1,
+      "answer_checks": [
+        {
+          "name": "direction",
+          "expected": "decrease",
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true
+    },
+    {
+      "question_id": "wb_04",
+      "category": "worldbank",
+      "status": "completed",
+      "tool_selection": {
+        "applicable": true,
+        "correct": true,
+        "expected": "get_worldbank_indicator",
+        "actual": "get_worldbank_indicator"
+      },
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 2,
+        "successful_calls": 2,
+        "success_rate": 1.0
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 1,
+      "answer_checks_total": 1,
+      "answer_checks": [
+        {
+          "name": "relationship",
+          "expected": "lower",
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true
+    },
+    {
+      "question_id": "wb_05",
+      "category": "worldbank",
+      "status": "completed",
+      "tool_selection": {
+        "applicable": true,
+        "correct": true,
+        "expected": "get_worldbank_indicator",
+        "actual": "get_worldbank_indicator"
+      },
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 1,
+        "successful_calls": 1,
+        "success_rate": 1.0
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 2,
+      "answer_checks_total": 2,
+      "answer_checks": [
+        {
+          "name": "delta_percentage_points",
+          "expected": -0.07487749,
+          "correct": true
+        },
+        {
+          "name": "direction",
+          "expected": "decrease",
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true
+    },
+    {
+      "question_id": "oecd_01",
+      "category": "oecd",
+      "status": "completed",
+      "tool_selection": {
+        "applicable": true,
+        "correct": true,
+        "expected": "get_oecd_indicator",
+        "actual": "get_oecd_indicator"
+      },
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 1,
+        "successful_calls": 1,
+        "success_rate": 1.0
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 2,
+      "answer_checks_total": 2,
+      "answer_checks": [
+        {
+          "name": "value",
+          "expected": 6.776,
+          "correct": true
+        },
+        {
+          "name": "year",
+          "expected": 2025,
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true
+    },
+    {
+      "question_id": "oecd_02",
+      "category": "oecd",
+      "status": "completed",
+      "tool_selection": {
+        "applicable": true,
+        "correct": true,
+        "expected": "get_oecd_indicator",
+        "actual": "get_oecd_indicator"
+      },
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 1,
+        "successful_calls": 1,
+        "success_rate": 1.0
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 1,
+      "answer_checks_total": 1,
+      "answer_checks": [
+        {
+          "name": "value",
+          "expected": 7.221,
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true
+    },
+    {
+      "question_id": "oecd_03",
+      "category": "oecd",
+      "status": "completed",
+      "tool_selection": {
+        "applicable": true,
+        "correct": true,
+        "expected": "get_oecd_indicator",
+        "actual": "get_oecd_indicator"
+      },
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 1,
+        "successful_calls": 1,
+        "success_rate": 1.0
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 1,
+      "answer_checks_total": 1,
+      "answer_checks": [
+        {
+          "name": "direction",
+          "expected": "decrease",
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true
+    },
+    {
+      "question_id": "oecd_04",
+      "category": "oecd",
+      "status": "completed",
+      "tool_selection": {
+        "applicable": true,
+        "correct": true,
+        "expected": "get_oecd_indicator",
+        "actual": "get_oecd_indicator"
+      },
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 1,
+        "successful_calls": 1,
+        "success_rate": 1.0
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 1,
+      "answer_checks_total": 1,
+      "answer_checks": [
+        {
+          "name": "highest_years.item",
+          "expected": 2020,
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true
+    },
+    {
+      "question_id": "oecd_05",
+      "category": "oecd",
+      "status": "completed",
+      "tool_selection": {
+        "applicable": true,
+        "correct": true,
+        "expected": "get_oecd_indicator",
+        "actual": "get_oecd_indicator"
+      },
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 1,
+        "successful_calls": 1,
+        "success_rate": 1.0
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 2,
+      "answer_checks_total": 2,
+      "answer_checks": [
+        {
+          "name": "delta_percentage_points",
+          "expected": 0.146,
+          "correct": true
+        },
+        {
+          "name": "direction",
+          "expected": "increase",
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true
+    },
+    {
+      "question_id": "local_01",
+      "category": "local",
+      "status": "completed",
+      "tool_selection": {
+        "applicable": true,
+        "correct": true,
+        "expected": "query_local_reviews",
+        "actual": "query_local_reviews"
+      },
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 1,
+        "successful_calls": 1,
+        "success_rate": 1.0
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 1,
+      "answer_checks_total": 1,
+      "answer_checks": [
+        {
+          "name": "negative_review_count",
+          "expected": 1261,
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true
+    },
+    {
+      "question_id": "local_02",
+      "category": "local",
+      "status": "completed",
+      "tool_selection": {
+        "applicable": true,
+        "correct": true,
+        "expected": "query_local_reviews",
+        "actual": "query_local_reviews"
+      },
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 1,
+        "successful_calls": 1,
+        "success_rate": 1.0
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 1,
+      "answer_checks_total": 1,
+      "answer_checks": [
+        {
+          "name": "main_problem.category",
+          "expected": "ACCESO_CITAS",
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true
+    },
+    {
+      "question_id": "local_03",
+      "category": "local",
+      "status": "completed",
+      "tool_selection": {
+        "applicable": true,
+        "correct": true,
+        "expected": "query_local_reviews",
+        "actual": "query_local_reviews"
+      },
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 1,
+        "successful_calls": 1,
+        "success_rate": 1.0
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 1,
+      "answer_checks_total": 1,
+      "answer_checks": [
+        {
+          "name": "percentage_negative",
+          "expected": 53.20594479830149,
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true
+    },
+    {
+      "question_id": "local_04",
+      "category": "local",
+      "status": "completed",
+      "tool_selection": {
+        "applicable": true,
+        "correct": true,
+        "expected": "query_local_reviews",
+        "actual": "query_local_reviews"
+      },
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 2,
+        "successful_calls": 2,
+        "success_rate": 1.0
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 1,
+      "answer_checks_total": 1,
+      "answer_checks": [
+        {
+          "name": "direction",
+          "expected": "increase",
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true
+    },
+    {
+      "question_id": "local_05",
+      "category": "local",
+      "status": "completed",
+      "tool_selection": {
+        "applicable": true,
+        "correct": true,
+        "expected": "query_local_reviews",
+        "actual": "query_local_reviews"
+      },
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 1,
+        "successful_calls": 1,
+        "success_rate": 1.0
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 4,
+      "answer_checks_total": 4,
+      "answer_checks": [
+        {
+          "name": "top_negative_keywords.item",
+          "expected": "citas",
+          "correct": true
+        },
+        {
+          "name": "top_negative_keywords.count",
+          "expected": 1411,
+          "correct": true
+        },
+        {
+          "name": "main_problem.category",
+          "expected": "ACCESO_CITAS",
+          "correct": true
+        },
+        {
+          "name": "main_problem.count",
+          "expected": 1248,
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true
+    },
+    {
+      "question_id": "wb_vs_oecd_neutral_01",
+      "category": "wb_vs_oecd_C",
+      "status": "completed",
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 2,
+        "successful_calls": 2,
+        "success_rate": 1.0
+      },
+      "ambiguity_analysis": {
+        "tools_consulted": [
+          "get_worldbank_indicator",
+          "get_oecd_indicator"
+        ],
+        "consulted_both_sources": true,
+        "ground_truth_values_match": true,
+        "note": "Requiere revisión manual: ¿la respuesta final reconoce la ambigüedad si consultó una sola fuente y los valores GT difieren?"
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 2,
+      "answer_checks_total": 2,
+      "answer_checks": [
+        {
+          "name": "worldbank_value",
+          "expected": 6.8663702,
+          "correct": true
+        },
+        {
+          "name": "oecd_value",
+          "expected": 6.866,
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true
+    },
+    {
+      "question_id": "wb_oecd_02",
+      "category": "wb_vs_oecd_A",
+      "status": "completed",
+      "tool_selection": {
+        "applicable": true,
+        "correct": true,
+        "expected": "get_worldbank_indicator",
+        "actual": "get_worldbank_indicator"
+      },
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 1,
+        "successful_calls": 1,
+        "success_rate": 1.0
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 1,
+      "answer_checks_total": 1,
+      "answer_checks": [
+        {
+          "name": "value",
+          "expected": 7.28587723,
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true
+    },
+    {
+      "question_id": "wb_oecd_03",
+      "category": "wb_vs_oecd_B",
+      "status": "completed",
+      "tool_selection": {
+        "applicable": true,
+        "correct": true,
+        "expected": "get_oecd_indicator",
+        "actual": "get_oecd_indicator"
+      },
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 1,
+        "successful_calls": 1,
+        "success_rate": 1.0
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 1,
+      "answer_checks_total": 1,
+      "answer_checks": [
+        {
+          "name": "value",
+          "expected": 7.611,
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true
+    },
+    {
+      "question_id": "wb_oecd_04",
+      "category": "wb_vs_oecd_C",
+      "status": "completed",
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 2,
+        "successful_calls": 2,
+        "success_rate": 1.0
+      },
+      "ambiguity_analysis": {
+        "tools_consulted": [
+          "get_worldbank_indicator",
+          "get_oecd_indicator"
+        ],
+        "consulted_both_sources": true,
+        "ground_truth_values_match": null,
+        "note": "Requiere revisión manual: ¿la respuesta final reconoce la ambigüedad si consultó una sola fuente y los valores GT difieren?"
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 2,
+      "answer_checks_total": 2,
+      "answer_checks": [
+        {
+          "name": "worldbank_value",
+          "expected": 7.61130476,
+          "correct": true
+        },
+        {
+          "name": "oecd_value",
+          "expected": 7.611,
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true
+    },
+    {
+      "question_id": "wb_oecd_05",
+      "category": "wb_vs_oecd_C",
+      "status": "completed",
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 2,
+        "successful_calls": 2,
+        "success_rate": 1.0
+      },
+      "ambiguity_analysis": {
+        "tools_consulted": [
+          "get_worldbank_indicator",
+          "get_oecd_indicator"
+        ],
+        "consulted_both_sources": true,
+        "ground_truth_values_match": null,
+        "note": "Requiere revisión manual: ¿la respuesta final reconoce la ambigüedad si consultó una sola fuente y los valores GT difieren?"
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 3,
+      "answer_checks_total": 3,
+      "answer_checks": [
+        {
+          "name": "worldbank_value",
+          "expected": 7.82545757,
+          "correct": true
+        },
+        {
+          "name": "oecd_value",
+          "expected": 7.825,
+          "correct": true
+        },
+        {
+          "name": "native_difference_percentage_points",
+          "expected": 0.00045757,
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true
+    },
+    {
+      "question_id": "chained_01",
+      "category": "chained",
+      "status": "completed",
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 2,
+        "successful_calls": 2,
+        "success_rate": 1.0
+      },
+      "chained_analysis": {
+        "chaining_attempted": true,
+        "used_local_source": true,
+        "used_institutional_source": true,
+        "needs_manual_review": true,
+        "manual_review_checklist": [
+          "¿Identificó correctamente el problema dominante (a)?",
+          "¿Reportó correctamente la tendencia del indicador (b)?",
+          "¿La relación entre (a) y (b) es defendible, sin inferencia causal no sustentada (c)?"
+        ]
+      },
+      "answer_accuracy_auto": 0.0,
+      "answer_checks_correct": 0,
+      "answer_checks_total": 1,
+      "answer_checks": [
+        {
+          "name": "b_indicator_trend.direction",
+          "expected": "increasing",
+          "correct": false
+        }
+      ],
+      "needs_manual_answer_review": true,
+      "grounding": {
+        "entity_grounding": 1,
+        "evidence_grounding": 1,
+        "causal_grounding": 1,
+        "overall_grounding": 1,
+        "rationale": "Uses the requested Costa Rica entities and retrieved evidence; no unsupported causal mechanism is asserted."
+      }
+    },
+    {
+      "question_id": "chained_02",
+      "category": "chained",
+      "status": "completed",
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 2,
+        "successful_calls": 2,
+        "success_rate": 1.0
+      },
+      "chained_analysis": {
+        "chaining_attempted": true,
+        "used_local_source": true,
+        "used_institutional_source": true,
+        "needs_manual_review": true,
+        "manual_review_checklist": [
+          "¿Identificó correctamente el problema dominante (a)?",
+          "¿Reportó correctamente la tendencia del indicador (b)?",
+          "¿La relación entre (a) y (b) es defendible, sin inferencia causal no sustentada (c)?"
+        ]
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 2,
+      "answer_checks_total": 2,
+      "answer_checks": [
+        {
+          "name": "main_problem.category",
+          "expected": "ACCESO_CITAS",
+          "correct": true
+        },
+        {
+          "name": "worldbank.direction",
+          "expected": "increase",
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true,
+      "grounding": {
+        "entity_grounding": 1,
+        "evidence_grounding": 0,
+        "causal_grounding": 0,
+        "overall_grounding": 0,
+        "rationale": "Uses the requested entities but extends observational co-movement into an unsupported causal interpretation."
+      }
+    },
+    {
+      "question_id": "chained_03",
+      "category": "chained",
+      "status": "completed",
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 2,
+        "successful_calls": 2,
+        "success_rate": 1.0
+      },
+      "chained_analysis": {
+        "chaining_attempted": true,
+        "used_local_source": true,
+        "used_institutional_source": true,
+        "needs_manual_review": true,
+        "manual_review_checklist": [
+          "¿Identificó correctamente el problema dominante (a)?",
+          "¿Reportó correctamente la tendencia del indicador (b)?",
+          "¿La relación entre (a) y (b) es defendible, sin inferencia causal no sustentada (c)?"
+        ]
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 2,
+      "answer_checks_total": 2,
+      "answer_checks": [
+        {
+          "name": "main_problem.category",
+          "expected": "ACCESO_CITAS",
+          "correct": true
+        },
+        {
+          "name": "oecd.direction",
+          "expected": "decrease",
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true,
+      "grounding": {
+        "entity_grounding": 1,
+        "evidence_grounding": 0,
+        "causal_grounding": 0,
+        "overall_grounding": 0,
+        "rationale": "Uses the correct entities but interprets observational trends through an unsupported causal mechanism."
+      }
+    },
+    {
+      "question_id": "chained_04",
+      "category": "chained",
+      "status": "completed",
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 2,
+        "successful_calls": 2,
+        "success_rate": 1.0
+      },
+      "chained_analysis": {
+        "chaining_attempted": false,
+        "used_local_source": false,
+        "used_institutional_source": true,
+        "needs_manual_review": true,
+        "manual_review_checklist": [
+          "¿Identificó correctamente el problema dominante (a)?",
+          "¿Reportó correctamente la tendencia del indicador (b)?",
+          "¿La relación entre (a) y (b) es defendible, sin inferencia causal no sustentada (c)?"
+        ]
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 6,
+      "answer_checks_total": 6,
+      "answer_checks": [
+        {
+          "name": "worldbank_value",
+          "expected": 7.61130476,
+          "correct": true
+        },
+        {
+          "name": "oecd_value",
+          "expected": 7.611,
+          "correct": true
+        },
+        {
+          "name": "worldbank_rounded_3",
+          "expected": 7.611,
+          "correct": true
+        },
+        {
+          "name": "oecd_rounded_3",
+          "expected": 7.611,
+          "correct": true
+        },
+        {
+          "name": "values_match_at_3_decimals",
+          "expected": true,
+          "correct": true
+        },
+        {
+          "name": "native_difference_percentage_points",
+          "expected": 0.00030476000000057013,
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true,
+      "grounding": {
+        "entity_grounding": 1,
+        "evidence_grounding": 1,
+        "causal_grounding": 1,
+        "overall_grounding": 1,
+        "rationale": "Correct country, sources, indicators and period; conclusions remain within the retrieved evidence."
+      }
+    },
+    {
+      "question_id": "chained_05",
+      "category": "chained",
+      "status": "completed",
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 2,
+        "successful_calls": 2,
+        "success_rate": 1.0
+      },
+      "chained_analysis": {
+        "chaining_attempted": true,
+        "used_local_source": true,
+        "used_institutional_source": true,
+        "needs_manual_review": true,
+        "manual_review_checklist": [
+          "¿Identificó correctamente el problema dominante (a)?",
+          "¿Reportó correctamente la tendencia del indicador (b)?",
+          "¿La relación entre (a) y (b) es defendible, sin inferencia causal no sustentada (c)?"
+        ]
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 4,
+      "answer_checks_total": 4,
+      "answer_checks": [
+        {
+          "name": "top_negative_keywords.item",
+          "expected": "nunca",
+          "correct": true
+        },
+        {
+          "name": "top_negative_keywords.count",
+          "expected": 1363,
+          "correct": true
+        },
+        {
+          "name": "top_keyword_percentage_of_negative_reviews",
+          "expected": 43.784131063283006,
+          "correct": true
+        },
+        {
+          "name": "worldbank.direction",
+          "expected": "increase",
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true,
+      "grounding": {
+        "entity_grounding": 1,
+        "evidence_grounding": 1,
+        "causal_grounding": 1,
+        "overall_grounding": 1,
+        "rationale": "Uses the requested Costa Rica local and World Bank evidence without adding an unsupported causal mechanism."
+      }
+    },
+    {
+      "question_id": "chained_06",
+      "category": "chained",
+      "status": "completed",
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 3,
+        "successful_calls": 3,
+        "success_rate": 1.0
+      },
+      "chained_analysis": {
+        "chaining_attempted": true,
+        "used_local_source": true,
+        "used_institutional_source": true,
+        "needs_manual_review": true,
+        "manual_review_checklist": [
+          "¿Identificó correctamente el problema dominante (a)?",
+          "¿Reportó correctamente la tendencia del indicador (b)?",
+          "¿La relación entre (a) y (b) es defendible, sin inferencia causal no sustentada (c)?"
+        ]
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 2,
+      "answer_checks_total": 2,
+      "answer_checks": [
+        {
+          "name": "main_problem.category",
+          "expected": "ACCESO_CITAS",
+          "correct": true
+        },
+        {
+          "name": "relationship_of_directions",
+          "expected": "opposite",
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true,
+      "grounding": {
+        "entity_grounding": 0,
+        "evidence_grounding": 0,
+        "causal_grounding": 1,
+        "overall_grounding": 0,
+        "rationale": "Switches from Costa Rica to United States data, violating entity and evidence grounding; no separate unsupported causal mechanism is required for the causal criterion to fail."
+      }
+    },
+    {
+      "question_id": "chained_07",
+      "category": "chained",
+      "status": "completed",
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 3,
+        "successful_calls": 3,
+        "success_rate": 1.0
+      },
+      "chained_analysis": {
+        "chaining_attempted": true,
+        "used_local_source": true,
+        "used_institutional_source": true,
+        "needs_manual_review": true,
+        "manual_review_checklist": [
+          "¿Identificó correctamente el problema dominante (a)?",
+          "¿Reportó correctamente la tendencia del indicador (b)?",
+          "¿La relación entre (a) y (b) es defendible, sin inferencia causal no sustentada (c)?"
+        ]
+      },
+      "answer_accuracy_auto": 0.5,
+      "answer_checks_correct": 2,
+      "answer_checks_total": 4,
+      "answer_checks": [
+        {
+          "name": "main_problem.category",
+          "expected": "ACCESO_CITAS",
+          "correct": true
+        },
+        {
+          "name": "main_problem.pct_of_negative_reviews",
+          "expected": 40.8769,
+          "correct": true
+        },
+        {
+          "name": "worldbank_oop.direction",
+          "expected": "increase",
+          "correct": false
+        },
+        {
+          "name": "oecd_pct_gdp.direction",
+          "expected": "increase",
+          "correct": false
+        }
+      ],
+      "needs_manual_answer_review": true,
+      "grounding": {
+        "entity_grounding": 0,
+        "evidence_grounding": 0,
+        "causal_grounding": 1,
+        "overall_grounding": 0,
+        "rationale": "Switches to United States macro indicators rather than the requested Costa Rica evidence."
+      }
+    },
+    {
+      "question_id": "chained_08",
+      "category": "chained",
+      "status": "completed",
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 3,
+        "successful_calls": 3,
+        "success_rate": 1.0
+      },
+      "chained_analysis": {
+        "chaining_attempted": true,
+        "used_local_source": true,
+        "used_institutional_source": true,
+        "needs_manual_review": true,
+        "manual_review_checklist": [
+          "¿Identificó correctamente el problema dominante (a)?",
+          "¿Reportó correctamente la tendencia del indicador (b)?",
+          "¿La relación entre (a) y (b) es defendible, sin inferencia causal no sustentada (c)?"
+        ]
+      },
+      "answer_accuracy_auto": 1.0,
+      "answer_checks_correct": 3,
+      "answer_checks_total": 3,
+      "answer_checks": [
+        {
+          "name": "main_problem.category",
+          "expected": "ACCESO_CITAS",
+          "correct": true
+        },
+        {
+          "name": "worldbank_govt_share.direction",
+          "expected": "increase",
+          "correct": true
+        },
+        {
+          "name": "oecd_pct_gdp.direction",
+          "expected": "increase",
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true,
+      "grounding": {
+        "entity_grounding": 1,
+        "evidence_grounding": 1,
+        "causal_grounding": 1,
+        "overall_grounding": 1,
+        "rationale": "Correct Costa Rica entities and retrieved evidence are used without unsupported causal attribution."
+      }
+    },
+    {
+      "question_id": "chained_09",
+      "category": "chained",
+      "status": "completed",
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 3,
+        "successful_calls": 3,
+        "success_rate": 1.0
+      },
+      "chained_analysis": {
+        "chaining_attempted": true,
+        "used_local_source": true,
+        "used_institutional_source": true,
+        "needs_manual_review": true,
+        "manual_review_checklist": [
+          "¿Identificó correctamente el problema dominante (a)?",
+          "¿Reportó correctamente la tendencia del indicador (b)?",
+          "¿La relación entre (a) y (b) es defendible, sin inferencia causal no sustentada (c)?"
+        ]
+      },
+      "answer_accuracy_auto": 0.8,
+      "answer_checks_correct": 4,
+      "answer_checks_total": 5,
+      "answer_checks": [
+        {
+          "name": "top_negative_keywords.item",
+          "expected": "citas",
+          "correct": true
+        },
+        {
+          "name": "top_negative_keywords.count",
+          "expected": 2583,
+          "correct": true
+        },
+        {
+          "name": "top_keyword_percentage_of_negative_reviews",
+          "expected": 43.58758015524806,
+          "correct": false
+        },
+        {
+          "name": "worldbank_govt_pct_gdp.direction",
+          "expected": "decrease",
+          "correct": true
+        },
+        {
+          "name": "oecd_pct_gdp.direction",
+          "expected": "decrease",
+          "correct": true
+        }
+      ],
+      "needs_manual_answer_review": true,
+      "grounding": {
+        "entity_grounding": 0,
+        "evidence_grounding": 0,
+        "causal_grounding": 1,
+        "overall_grounding": 0,
+        "rationale": "Local evidence is from Costa Rica but the macroeconomic comparison switches to United States data."
+      }
+    },
+    {
+      "question_id": "chained_10",
+      "category": "chained",
+      "status": "completed",
+      "tool_execution": {
+        "applicable": true,
+        "total_calls": 3,
+        "successful_calls": 3,
+        "success_rate": 1.0
+      },
+      "chained_analysis": {
+        "chaining_attempted": true,
+        "used_local_source": true,
+        "used_institutional_source": true,
+        "needs_manual_review": true,
+        "manual_review_checklist": [
+          "¿Identificó correctamente el problema dominante (a)?",
+          "¿Reportó correctamente la tendencia del indicador (b)?",
+          "¿La relación entre (a) y (b) es defendible, sin inferencia causal no sustentada (c)?"
+        ]
+      },
+      "answer_accuracy_auto": 0.5,
+      "answer_checks_correct": 1,
+      "answer_checks_total": 2,
+      "answer_checks": [
+        {
+          "name": "main_problem.category",
+          "expected": "ACCESO_CITAS",
+          "correct": true
+        },
+        {
+          "name": "diverged_in_direction",
+          "expected": false,
+          "correct": false
+        }
+      ],
+      "needs_manual_answer_review": true,
+      "grounding": {
+        "entity_grounding": 0,
+        "evidence_grounding": 0,
+        "causal_grounding": 1,
+        "overall_grounding": 0,
+        "rationale": "Switches to United States data and consequently reaches a relationship conclusion not grounded in the requested Costa Rica evidence."
+      }
+    }
+  ]
+}

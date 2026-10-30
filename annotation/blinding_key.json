@@ -1,0 +1,82 @@
+{
+ "R01": {
+  "question_id": "chained_03",
+  "model": "OPENAI"
+ },
+ "R02": {
+  "question_id": "chained_09",
+  "model": "OPENAI"
+ },
+ "R03": {
+  "question_id": "chained_02",
+  "model": "GEMINI"
+ },
+ "R04": {
+  "question_id": "chained_05",
+  "model": "OPENAI"
+ },
+ "R05": {
+  "question_id": "chained_05",
+  "model": "GEMINI"
+ },
+ "R06": {
+  "question_id": "chained_06",
+  "model": "GEMINI"
+ },
+ "R07": {
+  "question_id": "chained_02",
+  "model": "OPENAI"
+ },
+ "R08": {
+  "question_id": "chained_10",
+  "model": "GEMINI"
+ },
+ "R09": {
+  "question_id": "chained_10",
+  "model": "OPENAI"
+ },
+ "R10": {
+  "question_id": "chained_07",
+  "model": "OPENAI"
+ },
+ "R11": {
+  "question_id": "chained_08",
+  "model": "OPENAI"
+ },
+ "R12": {
+  "question_id": "chained_04",
+  "model": "OPENAI"
+ },
+ "R13": {
+  "question_id": "chained_04",
+  "model": "GEMINI"
+ },
+ "R14": {
+  "question_id": "chained_01",
+  "model": "GEMINI"
+ },
+ "R15": {
+  "question_id": "chained_06",
+  "model": "OPENAI"
+ },
+ "R16": {
+  "question_id": "chained_07",
+  "model": "GEMINI"
+ },
+ "R17": {
+  "question_id": "chained_09",
+  "model": "GEMINI"
+ },
+ "R18": {
+  "question_id": "chained_01",
+  "model": "OPENAI"
+ },
+ "R19": {
+  "question_id": "chained_03",
+  "model": "GEMINI"
+ },
+ "R20": {
+  "question_id": "chained_08",
+  "model": "GEMINI"
+ }
+}

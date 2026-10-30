@@ -1,0 +1,7 @@
+{
+  "query_url": "https://api.worldbank.org/v2/country/CRI/indicator/SH.XPD.CHEX.GD.ZS?format=json&per_page=1000&date=2021%3A2021",
+  "retrieved_at_utc": "20260907T030031Z",
+  "country_iso3": "CRI",
+  "indicator_code": "SH.XPD.CHEX.GD.ZS",
+  "raw_response": "[{\"page\":1,\"pages\":1,\"per_page\":1000,\"total\":1,\"sourceid\":\"2\",\"lastupdated\":\"2026-07-13\"},[{\"indicator\":{\"id\":\"SH.XPD.CHEX.GD.ZS\",\"value\":\"Current health expenditure (% of GDP)\"},\"country\":{\"id\":\"CR\",\"value\":\"Costa Rica\"},\"countryiso3code\":\"CRI\",\"date\":\"2021\",\"value\":7.61130476,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":2}]]"
+}

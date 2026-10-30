@@ -1,0 +1,7 @@
+{
+  "query_url": "https://api.worldbank.org/v2/country/CRI/indicator/SH.XPD.OOPC.CH.ZS?format=json&per_page=1000&date=2017%3A2019",
+  "retrieved_at_utc": "20261022T223122Z",
+  "country_iso3": "CRI",
+  "indicator_code": "SH.XPD.OOPC.CH.ZS",
+  "raw_response": "[{\"page\":1,\"pages\":1,\"per_page\":1000,\"total\":3,\"sourceid\":\"2\",\"lastupdated\":\"2026-10-08\"},[{\"indicator\":{\"id\":\"SH.XPD.OOPC.CH.ZS\",\"value\":\"Out-of-pocket expenditure (% of current health expenditure)\"},\"country\":{\"id\":\"CR\",\"value\":\"Costa Rica\"},\"countryiso3code\":\"CRI\",\"date\":\"2019\",\"value\":22.32456398,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":2},{\"indicator\":{\"id\":\"SH.XPD.OOPC.CH.ZS\",\"value\":\"Out-of-pocket expenditure (% of current health expenditure)\"},\"country\":{\"id\":\"CR\",\"value\":\"Costa Rica\"},\"countryiso3code\":\"CRI\",\"date\":\"2018\",\"value\":22.4164257,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":2},{\"indicator\":{\"id\":\"SH.XPD.OOPC.CH.ZS\",\"value\":\"Out-of-pocket expenditure (% of current health expenditure)\"},\"country\":{\"id\":\"CR\",\"value\":\"Costa Rica\"},\"countryiso3code\":\"CRI\",\"date\":\"2017\",\"value\":21.25539017,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":2}]]"
+}

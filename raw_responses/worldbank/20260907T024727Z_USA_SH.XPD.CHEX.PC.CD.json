@@ -1,0 +1,7 @@
+{
+  "query_url": "https://api.worldbank.org/v2/country/USA/indicator/SH.XPD.CHEX.PC.CD?format=json&per_page=1000&date=2020%3A2022",
+  "retrieved_at_utc": "20260907T024727Z",
+  "country_iso3": "USA",
+  "indicator_code": "SH.XPD.CHEX.PC.CD",
+  "raw_response": "[{\"page\":1,\"pages\":1,\"per_page\":1000,\"total\":3,\"sourceid\":\"2\",\"lastupdated\":\"2026-07-13\"},[{\"indicator\":{\"id\":\"SH.XPD.CHEX.PC.CD\",\"value\":\"Current health expenditure per capita (current US$)\"},\"country\":{\"id\":\"US\",\"value\":\"United States\"},\"countryiso3code\":\"USA\",\"date\":\"2022\",\"value\":12586.19628906,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":2},{\"indicator\":{\"id\":\"SH.XPD.CHEX.PC.CD\",\"value\":\"Current health expenditure per capita (current US$)\"},\"country\":{\"id\":\"US\",\"value\":\"United States\"},\"countryiso3code\":\"USA\",\"date\":\"2021\",\"value\":12080.07324219,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":2},{\"indicator\":{\"id\":\"SH.XPD.CHEX.PC.CD\",\"value\":\"Current health expenditure per capita (current US$)\"},\"country\":{\"id\":\"US\",\"value\":\"United States\"},\"countryiso3code\":\"USA\",\"date\":\"2020\",\"value\":11648.49511719,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":2}]]"
+}

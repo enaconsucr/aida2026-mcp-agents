@@ -1,0 +1,7 @@
+{
+  "query_url": "https://api.worldbank.org/v2/country/USA/indicator/SH.XPD.OOPC.CH.ZS?format=json&per_page=1000&date=2017%3A2019",
+  "retrieved_at_utc": "20260907T024739Z",
+  "country_iso3": "USA",
+  "indicator_code": "SH.XPD.OOPC.CH.ZS",
+  "raw_response": "[{\"page\":1,\"pages\":1,\"per_page\":1000,\"total\":3,\"sourceid\":\"2\",\"lastupdated\":\"2026-07-13\"},[{\"indicator\":{\"id\":\"SH.XPD.OOPC.CH.ZS\",\"value\":\"Out-of-pocket expenditure (% of current health expenditure)\"},\"country\":{\"id\":\"US\",\"value\":\"United States\"},\"countryiso3code\":\"USA\",\"date\":\"2019\",\"value\":11.30872917,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":2},{\"indicator\":{\"id\":\"SH.XPD.OOPC.CH.ZS\",\"value\":\"Out-of-pocket expenditure (% of current health expenditure)\"},\"country\":{\"id\":\"US\",\"value\":\"United States\"},\"countryiso3code\":\"USA\",\"date\":\"2018\",\"value\":11.32081032,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":2},{\"indicator\":{\"id\":\"SH.XPD.OOPC.CH.ZS\",\"value\":\"Out-of-pocket expenditure (% of current health expenditure)\"},\"country\":{\"id\":\"US\",\"value\":\"United States\"},\"countryiso3code\":\"USA\",\"date\":\"2017\",\"value\":11.34881878,\"unit\":\"\",\"obs_status\":\"\",\"decimal\":2}]]"
+}
