@@ -8,7 +8,16 @@ authors:
     given-names: "Pedro"
 version: "1.0.0"
 date-released: "2026-10-30"
+doi: "10.5281/zenodo.23816022"
 license: MIT
+repository-code: "https://github.com/enaconsucr/aida2026-mcp-agents"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23816022"
+    description: "Archived release v1.0.0 (cite this version for the AIDA 2026 paper)"
+  - type: doi
+    value: "10.5281/zenodo.23816021"
+    description: "All versions (concept DOI)"
 preferred-citation:
   type: conference-paper
   title: "Beyond Factual Accuracy: Evaluating MCP-Based LLM Agents for Heterogeneous Public-Sector Data Analytics"

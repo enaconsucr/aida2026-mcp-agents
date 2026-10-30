@@ -1,5 +1,7 @@
 # Beyond Factual Accuracy: MCP-based LLM agents for heterogeneous public-sector data
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23816022.svg)](https://doi.org/10.5281/zenodo.23816022)
+
 Code, benchmark, frozen logs, scoring rubric and grounding annotations for the AIDA 2026 paper
 *"Beyond Factual Accuracy: Evaluating MCP-Based LLM Agents for Heterogeneous Public-Sector Data Analytics"*
 (Leonardo Castellón-Rodríguez and Pedro Palos-Sánchez; Procedia Computer Science, Elsevier).
@@ -116,4 +118,6 @@ Third-party data keep their own terms (see above).
 
 ## Citation
 
-See `CITATION.cff`. A DOI for this release will be added here.
+The version used in the paper is archived on Zenodo as release v1.0.0:
+**https://doi.org/10.5281/zenodo.23816022** (all versions: https://doi.org/10.5281/zenodo.23816021).
+Please cite the paper and this archived release; see `CITATION.cff`.
